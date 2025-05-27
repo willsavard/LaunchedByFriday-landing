@@ -59,7 +59,7 @@ export default function LandingPage() {
             className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-white"
             onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
           >
-            Join Waitlist
+            Help Shape Our Retreat
           </Button>
         </div>
       </header>
@@ -80,8 +80,10 @@ export default function LandingPage() {
           </h1>
 
           <p className="text-xl text-ocean-navy-200 mb-8 leading-relaxed">
-            Go from idea to deployed MVP—fast. Leverage AI tools and expert mentorship in our premium and focused
-            retreat to rapidly build your market-ready, commercially viable startup.
+            Stop dreaming, start building. Launch your market-ready software MVP in just 7 days. Join a select group of
+            founders in a premium setting for an unparalleled week of focused creation. We provide intensive expert
+            mentorship and cutting-edge AI-powered development tools to transform your validated idea into a
+            commercially viable product - fast.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -90,7 +92,7 @@ export default function LandingPage() {
               className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-lg px-8 py-3 text-white font-semibold"
               onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
             >
-              Secure Your Spot
+              Share Your Vision & Get Early Info
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
@@ -227,6 +229,74 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* How We Build an MVP in a Week */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">How We Build an MVP in a Week</h2>
+            <p className="text-xl text-ocean-navy-700">AI-Powered Speed, Expert-Crafted Quality</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img
+                src="/images/collaborative-workspace.png"
+                alt="Entrepreneurs collaborating in a modern industrial workspace with laptops, whiteboards, and creative planning materials"
+                className="rounded-lg shadow-xl w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy-900/20 to-transparent rounded-lg"></div>
+            </div>
+            <div>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-gradient-to-r from-ocean-navy-700 to-ocean-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-ocean-navy-900 mb-2">Master AI Development Tools</h3>
+                    <p className="text-ocean-navy-600">
+                      You won't just use AI tools; you'll master them. We provide hands-on training on how to
+                      effectively leverage platforms like Lovable to accelerate every stage of software development.
+                      Learn the prompts, workflows, and best practices directly from experts.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-gradient-to-r from-ocean-navy-700 to-ocean-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <GraduationCap className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-ocean-navy-900 mb-2">Build with Seasoned Professionals</h3>
+                    <p className="text-ocean-navy-600">
+                      Our mentors aren't just advisors; they are experienced product developers who have built and
+                      launched multiple successful commercial software products using these exact AI-powered techniques.
+                      They work alongside you, ensuring your MVP is not only built rapidly but is also robust,
+                      user-friendly, and commercially sound.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-gradient-to-r from-ocean-navy-700 to-ocean-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-ocean-navy-900 mb-2">
+                      Official Lovable Partnership & Proven Experience
+                    </h3>
+                    <p className="text-ocean-navy-600">
+                      Our official partnership with Lovable gives you unparalleled access and insights. We're not just
+                      teaching theory; we're applying proven methodologies that we use to develop our own commercial
+                      products currently active in the market. You're learning and building based on real-world,
+                      up-to-the-minute expertise.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Experience Section with Image */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
@@ -235,10 +305,6 @@ export default function LandingPage() {
               <h2 className="text-3xl font-bold text-ocean-navy-900 mb-6">
                 Experience Collaborative Innovation in Paradise
               </h2>
-              <p className="text-lg text-ocean-navy-700 mb-6">
-                Picture yourself working alongside like-minded entrepreneurs in a stunning villa setting. Our retreat
-                combines the focus of a tech accelerator with the inspiration of a tropical destination.
-              </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-ocean-teal-600 mt-1 flex-shrink-0" />
@@ -398,61 +464,31 @@ export default function LandingPage() {
       {/* Waitlist Form */}
       <section className="py-16 px-4 bg-gradient-to-r from-ocean-navy-800 to-ocean-navy-900">
         <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Join Our Founding Bootcamp</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Help Shape Our First Retreat</h2>
           <p className="text-xl text-ocean-navy-200 mb-8">
-            Be among the first 5 founding members to shape LaunchedByFriday. Your experience and feedback will help us
-            create the ultimate entrepreneurship retreat for future participants.
+            Have 5 minutes? Your insights are invaluable. Help us build the ultimate AI-powered MVP launch experience
+            and get priority updates for our founding cohort. As one of our early contributors, you'll have direct
+            influence on the program design and receive exclusive perks.
           </p>
 
           <Card className="border-0 shadow-2xl bg-white">
             <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold text-ocean-navy-900 mb-4">Ready to Join?</h3>
+              <h3 className="text-2xl font-bold text-ocean-navy-900 mb-4">Share Your Vision</h3>
               <p className="text-ocean-navy-600 mb-6">
-                Click below to access our comprehensive feedback and interest form. Help us shape the perfect
-                entrepreneurship retreat experience.
+                Takes ~5 minutes. Share your thoughts on the ideal entrepreneurship retreat and help us create something
+                extraordinary. You'll get priority updates and consideration for our founding cohort with early bird
+                pricing.
               </p>
               <Button
                 size="lg"
                 className="w-full bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-lg py-3 text-white font-semibold"
                 onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
               >
-                Complete Interest Form
+                Share Your Vision & Get Early Info
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <p className="text-sm text-ocean-navy-600 text-center mt-4">
-                No commitment required. Your feedback helps us create the best possible experience.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Community Feedback Section */}
-      <section className="py-16 px-4 bg-ocean-teal-50">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">Help Us Build the Perfect Retreat</h2>
-          <p className="text-xl text-ocean-navy-700 mb-8">
-            Not ready to commit but interested in the concept? We'd love your input! Share your thoughts on what would
-            make the ideal entrepreneurship bootcamp and be part of creating something extraordinary.
-          </p>
-
-          <Card className="border-0 shadow-lg max-w-2xl mx-auto bg-white">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-xl font-bold text-ocean-navy-900 mb-4">Share Your Thoughts</h3>
-              <p className="text-ocean-navy-600 mb-6">
-                Access our detailed feedback form to share your ideas, concerns, and suggestions for the perfect
-                entrepreneurship retreat.
-              </p>
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-ocean-teal-600 text-ocean-teal-600 hover:bg-ocean-teal-600 hover:text-white text-lg py-3"
-                onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
-              >
-                Share Your Feedback
-              </Button>
-              <p className="text-sm text-ocean-navy-600 text-center mt-4">
-                Your input helps us create the best possible experience. No commitment required.
+                Your feedback shapes our program. Priority updates and founding cohort consideration included.
               </p>
             </CardContent>
           </Card>
