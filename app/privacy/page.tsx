@@ -63,8 +63,8 @@ export default function PrivacyPolicy() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-ocean-navy-900 mb-4">1. Information We Collect</h2>
               <p className="mb-4">
-                We collect information you provide directly to us, such as when you fill out our interest form,
-                subscribe to our newsletter, or contact us. This may include:
+                We collect information you provide directly to us, such as when you fill out our interest form 
+                or contact us. This may include:
               </p>
               <ul className="list-disc pl-6 mb-4">
                 <li>Name and contact information (email address, phone number)</li>
