@@ -227,8 +227,64 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Credibility Section */}
+      {/* Experience Section with Image */}
       <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-ocean-navy-900 mb-6">
+                Experience Collaborative Innovation in Paradise
+              </h2>
+              <p className="text-lg text-ocean-navy-700 mb-6">
+                Picture yourself working alongside like-minded entrepreneurs in a stunning villa setting. Our retreat
+                combines the focus of a tech accelerator with the inspiration of a tropical destination.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-ocean-teal-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-ocean-navy-900">Oceanfront Villa Workspace</div>
+                    <div className="text-ocean-navy-600">
+                      Breathtaking luxury villa with double-height ceilings, panoramic ocean views, and sophisticated
+                      design that elevates your entrepreneurial mindset
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-ocean-teal-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-ocean-navy-900">Inspiring Ocean Environment</div>
+                    <div className="text-ocean-navy-600">
+                      Work with stunning ocean views and infinity pool access that stimulate creativity and provide the
+                      perfect backdrop for breakthrough thinking
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-ocean-teal-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-ocean-navy-900">Peer Learning</div>
+                    <div className="text-ocean-navy-600">
+                      Learn from fellow entrepreneurs while building lasting professional relationships
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="/images/villa-workspace.jpg"
+                alt="Luxury oceanfront villa with double-height ceilings, floor-to-ceiling windows, and spectacular ocean views with infinity pool"
+                className="rounded-lg shadow-xl w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy-900/20 to-transparent rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Credibility Section */}
+      <section className="py-16 px-4 bg-ocean-navy-50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">Proven Track Record</h2>
@@ -262,7 +318,7 @@ export default function LandingPage() {
       </section>
 
       {/* What's Included */}
-      <section id="whats-included" className="py-16 px-4 bg-ocean-navy-50">
+      <section id="whats-included" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">What's Included</h2>
