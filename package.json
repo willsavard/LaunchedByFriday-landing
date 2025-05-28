@@ -63,8 +63,7 @@
     "vaul": "^0.9.6",
     "vue": "latest",
     "vue-router": "latest",
-    "zod": "^3.24.1",
-    "@vercel/analytics": "latest" 
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/node": "^22",

@@ -18,6 +18,7 @@ import {
   ArrowUp,
 } from "lucide-react"
 import Link from "next/link"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function LandingPage() {
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -39,71 +40,69 @@ export default function LandingPage() {
     <div className="bg-gradient-to-br from-ocean-navy-50 to-ocean-teal-50">
       {/* Header */}
       <header className="bg-ocean-navy-900/95 backdrop-blur-sm border-ocean-navy-700 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
             >
-              <div className="w-10 h-10 flex items-center justify-center">
+              <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
                 <img
                   src="/images/laptop_plane_logo.png"
                   alt="LaunchedByFriday Logo"
-                  className="w-10 h-10 object-contain"
+                  className="w-8 h-8 md:w-10 md:h-10 object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-white">LaunchedByFriday</span>
+              <span className="text-lg md:text-xl font-bold text-white">LaunchedByFriday</span>
             </button>
           </div>
           <Button
-            className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-white"
+            size="sm"
+            className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-white text-sm md:text-base px-3 md:px-4"
             onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
           >
-            Help Shape Our Retreat
+            <span className="hidden sm:inline">Help Shape Our Retreat</span>
+            <span className="sm:hidden">Get Info</span>
           </Button>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-ocean-navy-900 to-ocean-navy-800">
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-ocean-navy-900 to-ocean-navy-800">
         <div className="container mx-auto text-center max-w-4xl">
-          <Badge className="mb-6 bg-ocean-teal-500 text-white hover:bg-ocean-teal-500">
-            <Calendar className="w-4 h-4 mr-2" />
+          <Badge className="mb-4 md:mb-6 bg-ocean-teal-500 text-white hover:bg-ocean-teal-500 text-sm">
+            <Calendar className="w-3 h-3 md:w-4 md:h-4 mr-2" />
             Founding Bootcamp - Late 2025
           </Badge>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
             Build in a week.{" "}
             <span className="bg-gradient-to-r from-ocean-teal-400 to-ocean-teal-300 bg-clip-text text-transparent">
               Grow for a lifetime.
             </span>
           </h1>
 
-          <p className="text-xl text-ocean-navy-200 mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-ocean-navy-200 mb-6 md:mb-8 leading-relaxed">
             Stop dreaming, start building. Launch your market-ready software MVP in just 7 days. Join a select group of
-            founders in a premium setting for an unparalleled week of focused creation. We provide intensive expert
-            mentorship and cutting-edge AI-powered development tools to transform your validated idea into a
-            commercially viable product - fast.
+            founders in a premium setting for an unparalleled week of focused creation.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-8 md:mb-12">
             <Button
-              size="lg"
-              className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-lg px-8 py-3 text-white font-semibold"
+              className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-white"
               onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
             >
               Share Your Vision & Get Early Info
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
             <Button
-              size="lg"
               variant="outline"
-              className="text-lg px-8 py-3 border-ocean-navy-200 text-ocean-navy-200 hover:bg-ocean-navy-200 hover:text-ocean-navy-900"
+              className="border-ocean-navy-200 text-ocean-navy-200 hover:bg-ocean-navy-200 hover:text-ocean-navy-900"
               onClick={() => {
                 const element = document.getElementById("whats-included")
                 if (element) {
                   const elementPosition = element.offsetTop
-                  const offsetPosition = elementPosition - 100 // 100px offset from top
+                  const offsetPosition = elementPosition - 100
                   window.scrollTo({
                     top: offsetPosition,
                     behavior: "smooth",
@@ -115,29 +114,29 @@ export default function LandingPage() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
             <div>
-              <div className="text-2xl font-bold text-white">7</div>
-              <div className="text-sm text-ocean-navy-300">Days Intensive</div>
+              <div className="text-xl md:text-2xl font-bold text-white">7</div>
+              <div className="text-xs md:text-sm text-ocean-navy-300">Days to Launch</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-white">5</div>
-              <div className="text-sm text-ocean-navy-300">Founding Members</div>
+              <div className="text-xl md:text-2xl font-bold text-white">5</div>
+              <div className="text-xs md:text-sm text-ocean-navy-300">Founders</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-white">24/7</div>
-              <div className="text-sm text-ocean-navy-300">Expert Support</div>
+              <div className="text-xl md:text-2xl font-bold text-white">5</div>
+              <div className="text-xs md:text-sm text-ocean-navy-300">Ideas to Startups</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-white">100%</div>
-              <div className="text-sm text-ocean-navy-300">All Inclusive</div>
+              <div className="text-xl md:text-2xl font-bold text-white">1</div>
+              <div className="text-xs md:text-sm text-ocean-navy-300">Premium Location</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-8 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-ocean-navy-900 mb-8">The Tech Entrepreneur's Dilemma</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -167,7 +166,7 @@ export default function LandingPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-ocean-teal-50 to-ocean-navy-50">
+      <section className="py-8 md:py-16 px-4 bg-gradient-to-r from-ocean-teal-50 to-ocean-navy-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">Your Solution: LaunchedByFriday</h2>
@@ -230,7 +229,7 @@ export default function LandingPage() {
       </section>
 
       {/* How We Build an MVP in a Week */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-8 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">How We Build an MVP in a Week</h2>
@@ -247,7 +246,54 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy-900/20 to-transparent rounded-lg"></div>
             </div>
             <div>
-              <div className="space-y-6">
+              {/* Mobile Accordion */}
+              <div className="md:hidden">
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="ai-tools">
+                    <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                      Master AI Development Tools
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-ocean-navy-600">
+                        You won't just use AI tools; you'll master them. We provide hands-on training on how to
+                        effectively leverage platforms like Lovable to accelerate every stage of software development.
+                        Learn the prompts, workflows, and best practices directly from experts.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="professionals">
+                    <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                      Build with Seasoned Professionals
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-ocean-navy-600">
+                        Our mentors aren't just advisors; they are experienced product developers who have built and
+                        launched multiple successful commercial software products using these exact AI-powered
+                        techniques. They work alongside you, ensuring your MVP is not only built rapidly but is also
+                        robust, user-friendly, and commercially sound.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="partnership">
+                    <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                      Official Lovable Partnership & Proven Experience
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-ocean-navy-600">
+                        Our official partnership with Lovable gives you unparalleled access and insights. We're not just
+                        teaching theory; we're applying proven methodologies that we use to develop our own commercial
+                        products currently active in the market. You're learning and building based on real-world,
+                        up-to-the-minute expertise.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+
+              {/* Desktop Layout */}
+              <div className="hidden md:block space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-gradient-to-r from-ocean-navy-700 to-ocean-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                     <Zap className="w-4 h-4 text-white" />
@@ -298,14 +344,56 @@ export default function LandingPage() {
       </section>
 
       {/* Experience Section with Image */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-8 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-ocean-navy-900 mb-6">
                 Experience Collaborative Innovation in Paradise
               </h2>
-              <div className="space-y-4">
+
+              {/* Mobile Accordion */}
+              <div className="md:hidden">
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="villa">
+                    <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                      Oceanfront Villa Workspace
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-ocean-navy-600">
+                        Breathtaking luxury villa with double-height ceilings, panoramic ocean views, and sophisticated
+                        design that elevates your entrepreneurial mindset
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="environment">
+                    <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                      Inspiring Ocean Environment
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-ocean-navy-600">
+                        Work with stunning ocean views and infinity pool access that stimulate creativity and provide
+                        the perfect backdrop for breakthrough thinking
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="learning">
+                    <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                      Peer Learning
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-ocean-navy-600">
+                        Learn from fellow entrepreneurs while building lasting professional relationships
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+
+              {/* Desktop Layout */}
+              <div className="hidden md:block space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-ocean-teal-600 mt-1 flex-shrink-0" />
                   <div>
@@ -350,7 +438,7 @@ export default function LandingPage() {
       </section>
 
       {/* Credibility Section */}
-      <section className="py-16 px-4 bg-ocean-navy-50">
+      <section className="py-8 md:py-16 px-4 bg-ocean-navy-50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">Proven Track Record</h2>
@@ -384,7 +472,7 @@ export default function LandingPage() {
       </section>
 
       {/* What's Included */}
-      <section id="whats-included" className="py-16 px-4 bg-white">
+      <section id="whats-included" className="py-8 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">What's Included</h2>
@@ -462,33 +550,31 @@ export default function LandingPage() {
       </section>
 
       {/* Waitlist Form */}
-      <section className="py-16 px-4 bg-gradient-to-r from-ocean-navy-800 to-ocean-navy-900">
+      <section className="py-8 md:py-16 px-4 bg-gradient-to-r from-ocean-navy-800 to-ocean-navy-900">
         <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Help Shape Our First Retreat</h2>
-          <p className="text-xl text-ocean-navy-200 mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Help Shape Our First Retreat</h2>
+          <p className="text-lg md:text-xl text-ocean-navy-200 mb-6 md:mb-8">
             Have 5 minutes? Your insights are invaluable. Help us build the ultimate AI-powered MVP launch experience
-            and get priority updates for our founding cohort. As one of our early contributors, you'll have direct
-            influence on the program design and receive exclusive perks.
+            and get priority updates for our founding cohort.
           </p>
 
           <Card className="border-0 shadow-2xl bg-white">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold text-ocean-navy-900 mb-4">Share Your Vision</h3>
-              <p className="text-ocean-navy-600 mb-6">
-                Takes ~5 minutes. Share your thoughts on the ideal entrepreneurship retreat and help us create something
-                extraordinary. You'll get priority updates and consideration for our founding cohort with early bird
-                pricing.
+            <CardContent className="p-6 md:p-8 text-center">
+              <h3 className="text-xl md:text-2xl font-bold text-ocean-navy-900 mb-3 md:mb-4">Share Your Vision</h3>
+              <p className="text-ocean-navy-600 mb-4 md:mb-6 text-sm md:text-base">
+                Takes ~5 minutes. Share your thoughts and get priority updates with early bird pricing.
               </p>
               <Button
                 size="lg"
-                className="w-full bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-lg py-3 text-white font-semibold"
+                className="w-full bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-base md:text-lg py-3 text-white font-semibold"
                 onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
               >
-                Share Your Vision & Get Early Info
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <span className="hidden md:inline">Share Your Vision & Get Early Info</span>
+                <span className="md:hidden">Share Your Vision</span>
+                <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
               </Button>
-              <p className="text-sm text-ocean-navy-600 text-center mt-4">
-                Your feedback shapes our program. Priority updates and founding cohort consideration included.
+              <p className="text-xs md:text-sm text-ocean-navy-600 text-center mt-3 md:mt-4">
+                Your feedback shapes our program. Priority updates included.
               </p>
             </CardContent>
           </Card>
@@ -496,63 +582,77 @@ export default function LandingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-8 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">Frequently Asked Questions</h2>
           </div>
 
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-semibold text-ocean-navy-900 mb-2">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="coding">
+              <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
                 Do I need coding experience to participate?
-              </h3>
-              <p className="text-ocean-navy-600">
-                No coding experience required! We use AI-powered development tools that allow you to build software
-                through natural language and visual interfaces. Our partnership with Lovable ensures you have access to
-                the most advanced no-code/low-code solutions.
-              </p>
-            </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-ocean-navy-600">
+                  No coding experience required! We use AI-powered development tools that allow you to build software
+                  through natural language and visual interfaces. Our partnership with Lovable ensures you have access
+                  to the most advanced no-code/low-code solutions.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
 
-            <div>
-              <h3 className="text-lg font-semibold text-ocean-navy-900 mb-2">
+            <AccordionItem value="idea">
+              <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
                 What if I don't have a startup idea yet?
-              </h3>
-              <p className="text-ocean-navy-600">
-                Perfect! Part of our program includes idea validation and development workshops. We'll help you identify
-                market opportunities and refine your concept during the first days.
-              </p>
-            </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-ocean-navy-600">
+                  Perfect! Part of our program includes idea validation and development workshops. We'll help you
+                  identify market opportunities and refine your concept during the first days.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
 
-            <div>
-              <h3 className="text-lg font-semibold text-ocean-navy-900 mb-2">What's included in the accommodation?</h3>
-              <p className="text-ocean-navy-600">
-                You'll stay in a shared luxury villa with private bedrooms, common working spaces, high-speed internet,
-                and all meals included. The location will be in an affordable international destination with great
-                weather and inspiring surroundings.
-              </p>
-            </div>
+            <AccordionItem value="accommodation">
+              <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                What's included in the accommodation?
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-ocean-navy-600">
+                  You'll stay in a shared luxury villa with private bedrooms, common working spaces, high-speed
+                  internet, and all meals included. The location will be in an affordable international destination with
+                  great weather and inspiring surroundings.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
 
-            <div>
-              <h3 className="text-lg font-semibold text-ocean-navy-900 mb-2">What happens after the 7 days?</h3>
-              <p className="text-ocean-navy-600">
-                You'll have a working MVP, a go-to-market strategy, and access to our alumni community. We provide 3
-                months of follow-up support and ongoing access to our network of entrepreneurs, investors, and technical
-                experts.
-              </p>
-            </div>
+            <AccordionItem value="after">
+              <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
+                What happens after the 7 days?
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-ocean-navy-600">
+                  You'll have a working MVP, a go-to-market strategy, and access to our alumni community. We provide 3
+                  months of follow-up support and ongoing access to our network of entrepreneurs, investors, and
+                  technical experts.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
 
-            <div>
-              <h3 className="text-lg font-semibold text-ocean-navy-900 mb-2">
+            <AccordionItem value="when">
+              <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
                 When will the founding bootcamp take place?
-              </h3>
-              <p className="text-ocean-navy-600">
-                The founding bootcamp is scheduled for late 2025. As a founding member, you'll have input on the exact
-                dates and location selection. We'll work with our founding cohort to ensure the timing and destination
-                work for everyone.
-              </p>
-            </div>
-          </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-ocean-navy-600">
+                  The founding bootcamp is scheduled for late 2025. As a founding member, you'll have input on the exact
+                  dates and location selection. We'll work with our founding cohort to ensure the timing and destination
+                  work for everyone.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
