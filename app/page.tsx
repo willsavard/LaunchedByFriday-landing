@@ -85,8 +85,9 @@ export default function LandingPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-ocean-navy-200 mb-6 md:mb-8 leading-relaxed">
-            Launch your market-ready software MVP in just 7 days. Join a select group of founders in a premium setting
-            for an unparalleled week of focused creation using AI-powered development tools.
+            Launch your market-ready software MVP in just 7 days using AI-powered development tools. Join a select group
+            of founders in a premium setting for an unparalleled week of focused creation - no programming background
+            required.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-8 md:mb-12">
@@ -159,8 +160,8 @@ export default function LandingPage() {
               </div>
               <h3 className="font-semibold text-ocean-navy-900 mb-2">Technical Barriers</h3>
               <p className="text-ocean-navy-600">
-                Lack of coding experience or knowledge of modern AI development tools and expensive traditional
-                development costs
+                Non-technical founders face expensive development costs, long timelines, and dependency on technical
+                co-founders or agencies
               </p>
             </div>
             <div className="p-6">
@@ -181,10 +182,7 @@ export default function LandingPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">Your Solution: LaunchedByFriday</h2>
-            <p className="text-xl text-ocean-navy-700">
-              A proven system that combines AI-powered development training, expert mentorship, and an inspiring
-              environment to launch your startup MVP in just one week using cutting-edge AI coding tools.
-            </p>
+            <p className="text-xl text-ocean-navy-700">The AI-powered MVP-building week YOU need!</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -229,9 +227,10 @@ export default function LandingPage() {
                 <div className="w-12 h-12 bg-gradient-to-r from-ocean-navy-700 to-ocean-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="font-semibold text-ocean-navy-900 mb-2">Premium Bootcamp Location</h3>
+                <h3 className="font-semibold text-ocean-navy-900 mb-2">Early-Stage Idea Support</h3>
                 <p className="text-ocean-navy-600 text-sm">
-                  Intensive retreat in a beautiful location in an affordable international destination
+                  From rough concepts to refined MVPs - we help validate and develop your ideas into market-ready
+                  products
                 </p>
               </CardContent>
             </Card>
@@ -244,7 +243,9 @@ export default function LandingPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">How We Build an MVP in One Week</h2>
-            <p className="text-xl text-ocean-navy-700">AI-Powered Speed, Expert-Crafted Quality, Intensive Training</p>
+            <p className="text-xl text-ocean-navy-700">
+              AI-Powered Speed for Non-Technical Founders, Expert-Crafted Quality, No Coding Required
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -308,31 +309,27 @@ export default function LandingPage() {
               <div className="hidden md:block space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-gradient-to-r from-ocean-navy-700 to-ocean-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <Zap className="w-4 h-4 text-white" />
+                    <GraduationCap className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-ocean-navy-900 mb-2">Master AI Development Tools</h3>
+                    <h3 className="font-semibold text-ocean-navy-900 mb-2">Business Mentorship & Validation</h3>
                     <p className="text-ocean-navy-600">
-                      You won't just use AI coding tools; you'll master them in our intensive program. We provide
-                      hands-on training on how to effectively leverage platforms like Lovable to accelerate every stage
-                      of software development. Learn the prompts, workflows, and best practices for AI-powered
-                      development directly from experts.
+                      Get expert guidance to refine your business idea, validate market fit, and develop a go-to-market
+                      strategy. Our mentors help you identify opportunities and avoid common startup pitfalls before
+                      writing a single line of code.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-gradient-to-r from-ocean-navy-700 to-ocean-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <GraduationCap className="w-4 h-4 text-white" />
+                    <Zap className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-ocean-navy-900 mb-2">
-                      Build with Seasoned AI Development Professionals
-                    </h3>
+                    <h3 className="font-semibold text-ocean-navy-900 mb-2">Build Your MVP with AI-Powered Tools</h3>
                     <p className="text-ocean-navy-600">
-                      Our mentors aren't just advisors; they are experienced product developers who have built and
-                      launched multiple successful commercial software products using these exact AI-powered development
-                      techniques. They work alongside you in our intensive program, ensuring your MVP is not only built
-                      rapidly but is also robust, user-friendly, and commercially sound.
+                      Work alongside official Lovable partners to rapidly develop your product using cutting-edge AI
+                      tools. Transform your vision into a functional, market-ready MVP without coding experience - all
+                      guided by experts who've built successful commercial products.
                     </p>
                   </div>
                 </div>
@@ -341,14 +338,11 @@ export default function LandingPage() {
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-ocean-navy-900 mb-2">
-                      Official Lovable Partnership & Proven AI Development Experience
-                    </h3>
+                    <h3 className="font-semibold text-ocean-navy-900 mb-2">Intensive, In-Person Experience</h3>
                     <p className="text-ocean-navy-600">
-                      Our official partnership with Lovable gives you unparalleled access and insights. We're not just
-                      teaching theory; we're applying proven AI development methodologies that we use to develop our own
-                      commercial products currently active in the market. You're learning and building based on
-                      real-world, up-to-the-minute AI development expertise.
+                      Immerse yourself in a focused, distraction-free environment with daily milestones and
+                      accountability. Our 7-day intensive format in a premium location creates the perfect conditions
+                      for rapid progress and breakthrough moments that simply can't happen virtually.
                     </p>
                   </div>
                 </div>
@@ -402,9 +396,9 @@ export default function LandingPage() {
       <section id="whats-included" className="py-8 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">What's Included in Our Program</h2>
+            <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">What's Included for our Founders</h2>
             <p className="text-xl text-ocean-navy-700">
-              Everything you need for a successful week of AI development and beyond
+              Everything non-technical entrepreneurs need for successful AI development and beyond
             </p>
           </div>
 
@@ -489,42 +483,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Waitlist Form */}
-      <section className="py-8 md:py-16 px-4 bg-gradient-to-r from-ocean-navy-800 to-ocean-navy-900">
-        <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Help Shape Our First Program</h2>
-          <p className="text-lg md:text-xl text-ocean-navy-200 mb-6 md:mb-8">
-            Have 5 minutes? Your insights are invaluable. Help us build the ultimate AI-powered MVP development
-            experience and get priority updates for our founding bootcamp cohort.
-          </p>
-
-          <Card className="border-0 shadow-2xl bg-white">
-            <CardContent className="p-6 md:p-8 text-center">
-              <h3 className="text-xl md:text-2xl font-bold text-ocean-navy-900 mb-3 md:mb-4">
-                Share Your Vision for AI Development
-              </h3>
-              <p className="text-ocean-navy-600 mb-4 md:mb-6 text-sm md:text-base">
-                Takes ~5 minutes. Share your thoughts on AI development and get priority updates with early bird
-                pricing.
-              </p>
-              <Button
-                size="lg"
-                className="w-full bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-base md:text-lg py-3 text-white font-semibold"
-                onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
-                aria-label="Join AI Coding Bootcamp Waitlist"
-              >
-                <span className="hidden md:inline">Share Your Vision & Get Early Info</span>
-                <span className="md:hidden">Share Your Vision</span>
-                <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
-              </Button>
-              <p className="text-xs md:text-sm text-ocean-navy-600 text-center mt-3 md:mt-4">
-                Your feedback shapes our program. Priority updates included.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-8 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
@@ -535,13 +493,15 @@ export default function LandingPage() {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="coding">
               <AccordionTrigger className="text-left font-semibold text-ocean-navy-900">
-                Do I need coding experience to participate?
+                Is this program specifically designed for non-technical founders?
               </AccordionTrigger>
               <AccordionContent>
                 <p className="text-ocean-navy-600">
-                  No coding experience required! We use AI-powered development tools that allow you to build software
-                  through natural language and visual interfaces. Our partnership with Lovable ensures you have access
-                  to the most advanced no-code/low-code AI development solutions.
+                  Absolutely! Our program is specifically designed for non-technical founders and entrepreneurs without
+                  coding experience. We use AI-powered development tools that allow you to build software through
+                  natural language and visual interfaces. Our partnership with Lovable ensures you have access to the
+                  most advanced no-code/low-code solutions - perfect for non-technical founders who want to build their
+                  own MVP.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -600,6 +560,59 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Compliance & Security Section */}
+      <section className="py-8 md:py-12 px-4 bg-gradient-to-r from-ocean-navy-50 to-ocean-teal-50">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-ocean-navy-900 mb-4">
+              Enterprise-Grade Security & Compliance
+            </h2>
+            <p className="text-lg text-ocean-navy-700">Built with legal and compliance teams in mind</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="border-0 shadow-lg bg-white">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-green-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-ocean-navy-900 mb-2">Data Privacy Protection</h3>
+                <p className="text-ocean-navy-600 text-sm">
+                  GDPR and CCPA compliant data handling. Your intellectual property and business information remain
+                  confidential and secure.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg bg-white">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-ocean-navy-900 mb-2">Security Standards</h3>
+                <p className="text-ocean-navy-600 text-sm">
+                  Industry-standard security protocols, encrypted communications, and secure development environments
+                  for all participants.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg bg-white">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-purple-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-ocean-navy-900 mb-2">Legal Documentation</h3>
+                <p className="text-ocean-navy-600 text-sm">
+                  Comprehensive NDAs, liability coverage, and clear terms of service. Full documentation package
+                  available for legal review.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gradient-to-b from-ocean-navy-900 to-ocean-navy-800 text-white py-12 px-4">
         <div className="container mx-auto max-w-4xl text-center">
@@ -614,9 +627,7 @@ export default function LandingPage() {
             <span className="text-xl font-bold">LaunchedByFriday</span>
           </div>
 
-          <p className="text-ocean-navy-200 mb-6">
-            Transform your startup idea into reality in just one week, surrounded by fellow entrepreneurs in paradise.
-          </p>
+          <p className="text-ocean-navy-200 mb-6">Your Vision, Validated, Deployed</p>
 
           <div className="flex justify-center space-x-6 text-sm text-ocean-navy-300">
             <Link href="/privacy" className="hover:text-white transition-colors">
@@ -625,7 +636,7 @@ export default function LandingPage() {
             <Link href="/terms" className="hover:text-white transition-colors">
               Terms of Service
             </Link>
-            <a href="mailto:info@launchedbyfriday.com" className="hover:text-white transition-colors">
+            <a href="mailto:contact@launchedbyfriday.com" className="hover:text-white transition-colors">
               Contact
             </a>
           </div>
