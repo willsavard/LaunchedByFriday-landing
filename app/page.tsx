@@ -92,12 +92,13 @@ export default function LandingPage() {
 
           <div className="flex flex-wrap justify-center gap-4 mb-8 md:mb-12">
             <Button
-              className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-white"
+              size="lg"
+              className="bg-gradient-to-r from-ocean-teal-600 to-ocean-teal-500 hover:from-ocean-teal-700 hover:to-ocean-teal-600 text-white text-lg px-8 py-4"
               onClick={() => window.open("https://forms.gle/eZu19jTMLKTc8Udo9", "_blank")}
               aria-label="Join AI Coding Bootcamp - Share Your Vision"
             >
               Share Your Vision & Get Early Info
-              <ArrowRight className="ml-2 w-4 h-4" />
+              <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
               variant="outline"
@@ -484,7 +485,7 @@ export default function LandingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-8 md:py-16 px-4 bg-white">
+      <section className="py-8 md:py-16 px-4 bg-ocean-teal-50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-ocean-navy-900 mb-4">Frequently Asked Questions</h2>
@@ -497,11 +498,11 @@ export default function LandingPage() {
               </AccordionTrigger>
               <AccordionContent>
                 <p className="text-ocean-navy-600">
-                  Absolutely! Our program is specifically designed for non-technical founders and entrepreneurs without
-                  coding experience. We use AI-powered development tools that allow you to build software through
-                  natural language and visual interfaces. Our partnership with Lovable ensures you have access to the
-                  most advanced no-code/low-code solutions - perfect for non-technical founders who want to build their
-                  own MVP.
+                  Our program is specifically designed for non-technical founders and entrepreneurs without coding
+                  experience. We use AI-powered development tools that allow you to build software through natural
+                  language and visual interfaces. Our partnership with Lovable ensures you have access to the most
+                  advanced no-code/low-code solutions - perfect for non-technical founders who want to build their own
+                  MVP.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -561,7 +562,7 @@ export default function LandingPage() {
       </section>
 
       {/* Compliance & Security Section */}
-      <section className="py-8 md:py-12 px-4 bg-gradient-to-r from-ocean-navy-50 to-ocean-teal-50">
+      <section className="py-8 md:py-12 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-ocean-navy-900 mb-4">
@@ -571,7 +572,7 @@ export default function LandingPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="border-0 shadow-lg bg-white">
+            <Card className="border-0 shadow-lg bg-ocean-navy-50">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-green-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-white" />
@@ -584,7 +585,7 @@ export default function LandingPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg bg-white">
+            <Card className="border-0 shadow-lg bg-ocean-navy-50">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-white" />
@@ -597,7 +598,7 @@ export default function LandingPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg bg-white">
+            <Card className="border-0 shadow-lg bg-ocean-navy-50">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-purple-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-white" />
